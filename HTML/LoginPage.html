@@ -1,1 +1,99 @@
-
+<html>
+<head>
+<title>sign up page</title>
+<script>
+function check()
+{
+	var first=document.getElementById("fn");
+	var last=document.getElementById("ln");
+	var ag=document.getElementById("age");
+	var male=document.getElementById("m");
+	var female=document.getElementById("f");
+	var phone=document.getElementById("pn");
+	var create=document.getElementById("cp");
+	var re=document.getElementById("rp");
+	var cnty=document.getElementById("ct");
+	var img=document.getElementById("img1");
+	
+	if(first.value=="")
+	{
+		alert("please fill all the details");
+		first.focus();
+		return false;
+	}
+	else if(!isNaN(first.value))
+	{
+		alert("invalid name");
+		first.focus();
+		return false;
+	}
+	else if(last.value=="")
+	{
+		alert("please fill all the details");
+		last.focus();
+		return false;
+	}
+	else if(!isNaN(last.value))
+	{
+		alert("invalid name");
+		last.focus();
+		return false;
+	} 
+	else if(ag.value=="")
+	{
+		alert("please fill all the details");
+		ag.focus();
+		return false;
+	}
+	else if(isNaN(ag.value))
+	{
+		alert("invalid age");
+		ag.focus();
+		return false;
+	} 
+	
+}
+</script>
+</head>
+<body>
+<h1 align="center"><u>WELCOME !</u></h1>
+<h2 align="center"><u>Sign Up</u></h2>
+ <form>
+ <table>
+<tr>
+<td>FirstName:</td><td><input type="text" id="fn"/></td>
+</tr>
+<tr>
+<td>LastName:</td><td><input type="text" id="ln"/></td>
+</tr>
+<tr>
+<td>Age:</td><td><input type="text" id="age"/></td>
+</tr>
+<tr>
+<td>Sex:</td><td><input type="radio" id="m" name="sex"/>M
+<input type="radio"id="f" name="sex"/>F</td>
+</tr>
+<tr>
+<td>phone no.:</td><td><input type="text" id="pn"/></td></tr>
+<tr>
+<td>create password:</td><td><input type="password" id="cp"/></td></tr>
+<tr>
+<td>re-type password:</td><td><input type="password" id="rp"/></td></tr>
+<tr>
+<td>country:</td><td><select id="ct">
+<option>---select---</option>
+<option>India</option>
+<option>vietnam</option>
+<option>south korea</option>
+<option>china</option>
+<option>russia</option>
+</select></td></tr>
+<tr>
+<td>upload photo:</td><td><input type="file" id="img1" /></td>
+</tr>
+</table><br>
+<input type="submit" value="SUBMIT" onclick="return check()";/>
+<input type="reset" value="RESET"/>
+</form>
+</body>
+</html>
