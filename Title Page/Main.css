@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+body{
+	background-image: url('background.png');
+	margin: 0;
+	background-size: cover;
+	padding: 0;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	background-color: grey;
+	padding: 0px 0px 6px 40px;
+	opacity:.76;
+	height: 60px;
+	border-radius: 12px;
+	border-bottom: 4px solid #4f4f4f;  
+}
+
+header h1{
+	display: inline;
+	font-family: 'Staatliches', cursive;
+	font-size: 62px;
+	color: red;
+	float: left;
+	margin-top: 0px;
+	margin-right: 10px;
+}
+
+.chin{
+	display: inline;
+	font-family: 'Staatliches', cursive;
+	font-size: 60px;
+	color: red;
+	float: right;
+	margin-top: 0px;
+	margin-right: 40px;
+}
+nav ul{
+	display: inline;
+    padding: 0px;
+    margin-left: 18px;
+    overflow: hidden;
+}
+ 
+li{
+	display: inline-block;
+    margin-top: 0px;
+    list-style-type: none;
+    margin: 12px;
+    margin-left: 18px;
+}
+
+ a{
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	font-family: 'ZCOOL KuaiLe', cursive;
+	text-decoration: none;
+	margin-top: 17px;
+}
+
+li a:hover:not(.active){
+	background-color: #4f4f4f;
+	padding: 5px 10px 12px 10px;
+	border-radius: 10px;
+}
+.active{
+	background-color: #bfaaaa;
+    padding: 5px 10px 12px 10px;
+    border-radius: 10px;
+}
+
+h2{
+	font-family: 'Luckiest Guy', cursive;
+	color: #553aea;
+	font-size: 35px;
+	
+}
+
+.signinup{
+	width:460px;
+    height:520px;
+    background-color:#c4d8eb;
+    color:white;
+    top:50%;
+    left:1250px;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding:0px 10px ;
+    opacity:.9;
+    border-radius: 9%;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin: 0;
+}
+
+div h1{
+	display: inline;
+	font-family: 'Staatliches', cursive;
+	font-size: 62px;
+	color: red;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 10px;
+}
+
+h3{
+	color: red;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+button.sign{
+	cursor:pointer;
+    background-color: lawngreen;
+    position:center;
+    padding: 1px;
+    width:50%;
+    text-transform: uppercase;
+    margin-left: 100px;
+    z-index: 1;
+    transition-duration: 0.4s;
+    height: 70px;
+    margin-top: 40px;
+}
+
+button.login{
+	cursor:pointer;
+    background-color: lawngreen;
+    position:center;
+    padding: 1px;
+    width:50%;
+    text-transform: uppercase;
+    margin-left: 100px;
+    z-index: 1;
+    transition-duration: 0.4s;
+    height: 70px;
+    margin-top: 40px;
+}
