@@ -51,6 +51,65 @@ function check()
 		ag.focus();
 		return false;
 	} 
+	else if (male.checked==false&&female.checked==false) 
+	{
+		alert("choose an option");
+		female.focus();
+		return false;
+	}
+	else if(phone.value=="")
+	{
+		alert("please fill all the details")
+		phone.focus();
+		return false;
+	}
+	else if(isNaN(phone.value)||phone.value.length!=10)
+	{
+		alert("invalid phone no.");
+		phone.focus();
+		return false;
+	}
+	else if(create.value=="")
+	{
+		alert("please fill all details");
+		create.focus();
+		return false;
+	}
+	else if(create.value.length<7)
+	{
+		alert("poor password:Enter 7 or more characters");
+		create.focus();
+		return false;
+	}
+	else if(re.value=="")
+	{
+		alert("please fill all details");
+		re.focus();
+		return false;
+	}
+	else if(create.value!=re.value)
+	{
+		alert("passwords are not matching");
+		re.focus();
+		return false;
+	}
+	else if(cnty.value=="---select---")
+	{
+		alert("choose country name!");
+		cnty.focus();
+		return false;
+	}
+	else if(img.value=="")
+	{
+		alert("choose photo");
+		img.focus();
+		return false;
+	}
+	else
+	{
+		alert("form completed:move to homepg");
+		return true;
+	}
 	
 }
 </script>
